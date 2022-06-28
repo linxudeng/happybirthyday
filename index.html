@@ -1,0 +1,134 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--有中文的要像上面这样写否则会出现乱码-->
+
+
+<style type= "text/css" >
+body
+{
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size: 80% 80%;
+    background-position:center center;
+    /*将body标签的背景设置为平铺满正个浏览器窗口*/
+}
+div
+{
+  /*为了让多行字符一起居中先将字符放在块里，再将块居中*/
+  position:absolute;
+  top:40%;
+  left:50%;
+  width:400px;
+  height:300px;
+  margin-top: -200px;
+  margin-left: -200px;
+  overflow:hidden;
+  display:block;
+  text-align:center;
+  vertical-align:middle;
+  font-size:30px;
+  
+}
+button {
+  display: inline-block;
+  padding: 2px 1px;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+}
+
+b1
+{
+	color: magenta;  
+
+    font:italic bold 30px/30px Georgia,serif;
+}
+b2
+{
+	color: rgb(255, 0, 0);  
+
+    font:italic bold 30px/30px Georgia,serif;
+}
+</style>
+
+<title>生日快乐</title>
+<!--上面的文字显示在标题栏里-->
+</head>
+
+<body id = "a" background="green.jpg">
+
+<div id = "one">
+<p >今天是个特别的日子<br />我有个问题想问你<br /><br />我是你爹吗</p>
+<button  onclick = "yes1()">是</button>
+<button onclick  = >不是</button>
+
+
+</div>
+<div id = "two" style="display:none">
+<br>没错我就是你爹<br>爹对你好不好</br></p>
+<button onclick  = "yes2()">好！</button>
+<button onclick  = "">不好</button>
+
+</div>
+<div id = "three" style="display:none">
+<br>唉！这就是父爱<br></br>
+<button onclick  = "prisent()">礼物</button>
+ 
+
+</div>
+<div id = "four"  style="display:none" >
+
+<b2>生日快乐 </b2>
+
+<b2>林雯雯</b2>
+ 
+
+</div>
+<script type="text/javascript">
+
+           
+
+
+             function yes1() {
+                document.getElementById("a").setAttribute("background","yellow.jpg");
+
+                document.getElementById("one").style.display="none";
+                document.getElementById("two").style.display="block";
+                document.getElementById("three").style.display="none";
+            }
+            function yes2() {
+                document.getElementById("a").setAttribute("background","red.jpg");
+
+                document.getElementById("one").style.display="none";
+                document.getElementById("two").style.display="none";
+                document.getElementById("three").style.display="block";
+            }
+            function prisent() {
+                document.getElementById("a").setAttribute("background","cake.jpeg");
+
+                document.getElementById("one").style.display="none";
+                document.getElementById("two").style.display="none";
+                document.getElementById("three").style.display="none";
+                 document.getElementById("four").style.display="block";
+            }
+  
+        </script>
+
+</body>
+
+</html>
+
